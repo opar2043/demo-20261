@@ -3,12 +3,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-
+ import img1 from "../../assets/banner4.jpeg";
+ import img2 from "../../assets/banner3.jpeg";
+ import img3 from "../../assets/banner5.jpeg";
+ import img6 from "../../assets/banner6.jpeg";
+ import img7 from "../../assets/banner7.jpeg";
 const eventData = [
-  { id: 1, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6RLDPR60BqOAmeVxTYVx-sYfRnDUBaUQ0D8l-sj_PCEVZCJmWMZAq2_s&s" },
-  { id: 2, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD-Qnwa1GPdLQFYxHbMvzuB4qMWi76l1zCSEzUGHQlSs9Ufo45kL8ezw&s" },
-  { id: 3, image: "hhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD-Qnwa1GPdLQFYxHbMvzuB4qMWi76l1zCSEzUGHQlSs9Ufo45kL8ezw&s" },
-  { id: 4, image: "/images/event4.jpg" },
+  { id: 1, image: img6 },
+  { id: 2, image: img3 },
+  { id: 3, image: img2 },
+  { id: 4, image: img1 },
+  { id: 5, image: img7 },
 ];
 
 

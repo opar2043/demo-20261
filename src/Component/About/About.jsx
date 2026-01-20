@@ -22,31 +22,26 @@ If you’re ready to take your gaming and betting experience to the next level, 
 `;
 
   return (
-    <div className="w-full mx-auto px-4 md:px-12 py-10 bg-transparent">
+    <div className="w-full mx-auto px-4 md:px-8 py-10 bg-transparent">
       {/* Heading */}
       <h2 className="text-[#667281] font-bold uppercase text-lg mb-4">
-        Baji Bangladesh - Leading Online Gaming and Betting Platform in Bangladesh
+        Baji Bangladesh - Leading Online Gaming and Betting Platform in
+        Bangladesh
       </h2>
 
       {/* Text */}
-      <p
-        className="text-[#63717F] leading-relaxed text-sm whitespace-pre-line"
-      >
+      <p className="text-[#63717F] leading-relaxed text-sm whitespace-pre-line">
         {showFull ? (
-          <>
-            {highlightText(fullText)}
-          </>
+          <>{highlightText(fullText)}</>
         ) : (
-          <>
-            {highlightText(shortText)}
-          </>
+          <>{highlightText(shortText)}</>
         )}
       </p>
 
       {/* Show More / Less */}
       <button
         onClick={() => setShowFull(!showFull)}
-        className="mt-4 text-[#D09A48] font-medium text-sm hover:underline"
+        className="mt-4 text-[#25B687] font-medium text-sm hover:underline"
       >
         {showFull ? "Show Less" : "Show Full"}
       </button>
@@ -71,7 +66,7 @@ const highlightText = (text) => {
     const regex = new RegExp(`(${word})`, "gi");
     result = result.replace(
       regex,
-      `<span class="text-[#D09A48] font-bold">$1</span>`
+      `<span class="text-[#25B687] font-bold">$1</span>`,
     );
   });
 

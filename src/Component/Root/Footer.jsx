@@ -3,7 +3,7 @@ import { FiExternalLink } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="bg-transparent w-full mx-auto text-[#8E9AA5] px-4 md:px-12 py-12">
+    <footer className="bg-transparent w-full mx-auto text-[#8E9AA5] px-4 md:px-8 py-12">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 
         {/* Column 1 */}
@@ -66,19 +66,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="mt-10 border-t border-gray-800 pt-6 flex items-center justify-between">
-        <p className="text-xs text-gray-500">
-          © {new Date().getFullYear()} Baji. All rights reserved.
-        </p>
 
-        {/* Bottom Right Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-[#141515] flex items-center justify-center text-red-500 font-bold">
-            bj
-          </div>
-        </div>
-      </div>
     </footer>
   );
 };

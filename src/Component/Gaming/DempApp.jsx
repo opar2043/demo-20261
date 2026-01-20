@@ -3,13 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import Marquee from "react-fast-marquee";
 import img1 from "../../assets/img1.jpeg";
 import img2 from "../../assets/img2.jpeg";
 import img3 from "../../assets/img3.jpeg";
 import img4 from "../../assets/img4.jpeg";
 import img5 from "../../assets/img5.jpeg";
 import img6 from "../../assets/img6.jpeg";
-const GamesSection = () => {
+import { FiMic } from "react-icons/fi";
+const DempApp = () => {
   const featuredGamesData = [
     {
       id: 1,
@@ -42,21 +44,34 @@ const GamesSection = () => {
   return (
     <div className="w-full mx-auto px-4 md:px-8 py-6 bg-[#141515]">
       {/* Header */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-3">
-          <span className="w-1 h-6 bg-[#13805E] rounded-sm"></span>
-          <h2 className="text-white font-bold text-lg">Featured Games</h2>
-        </div>
+<Marquee
+  speed={50}
+  gradient={false}
+  pauseOnHover={true}
+  className="py-8"
+>
+  <span className="text-white font-semibold text-sm mb-6">
+    Dear customers, please use the given link to access our website{" "}
+    <a
+      href="https://baji999.in"
+      target="_blank"
+      rel="noopener noreferrer" 
+      className="underline text-blue-400"
+    >
+      https://baji999.in
+    </a>{" "}
+    and download our Apps using the link provided -{" "}
+    <a
+      href="https://bjbaji7.live/download/bj/bj.apk"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="underline text-blue-400"
+    >
+      https://bjbaji7.live/download/bj/bj.apk
+    </a>
+  </span>
+</Marquee>
 
-        <div className="flex gap-2">
-          <div className="featured-prev cursor-pointer px-2 py-1 border border-gray-600 text-white rounded">
-            ‹
-          </div>
-          <div className="featured-next cursor-pointer px-2 py-1 border border-gray-600 text-white rounded">
-            ›
-          </div>
-        </div>
-      </div>
 
       {/* Slider */}
       <Swiper
@@ -93,4 +108,4 @@ const GamesSection = () => {
   );
 };
 
-export default GamesSection;
+export default DempApp;

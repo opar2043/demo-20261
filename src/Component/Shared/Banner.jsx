@@ -2,17 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import img1 from "../../assets/banner1.jpeg";
+import img2 from "../../assets/banner2.jpeg";
+import img3 from "../../assets/banner3.jpeg";
+
 
 const Banner = () => {
   const slides = [
     {
-      img: "https://img.b112j.com/upload/announcement/image_241701.jpg",
+      img: img1,
     },
     {
-      img: "https://img.b112j.com/upload/announcement/image_283383.jpg",
+      img: img2,
     },
     {
-      img: "https://img.b112j.com/upload/announcement/image_241701.jpg",
+      img: img3,
     },
   ];
 
@@ -33,7 +37,7 @@ const Banner = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="relative rounded-md w-full h-[20vh] md:h-[40vh] flex items-center justify-center text-center"
+            className="relative rounded-md w-full h-[20vh] md:h-[30vh] flex items-center justify-center text-center"
           >
             {/* Background Image */}
             <img
