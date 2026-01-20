@@ -22,7 +22,7 @@ If you’re ready to take your gaming and betting experience to the next level, 
 `;
 
   return (
-    <div className="w-full md:w-10/12 mx-auto px-4 md:px-12 py-10 bg-transparent">
+    <div className="w-full mx-auto px-4 md:px-12 py-10 bg-transparent">
       {/* Heading */}
       <h2 className="text-[#667281] font-bold uppercase text-lg mb-4">
         Baji Bangladesh - Leading Online Gaming and Betting Platform in Bangladesh

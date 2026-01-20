@@ -3,7 +3,7 @@ import { FiExternalLink } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="bg-transparent w-full md:w-10/12 mx-auto text-[#8E9AA5] px-4 md:px-12 py-12">
+    <footer className="bg-transparent w-full mx-auto text-[#8E9AA5] px-4 md:px-12 py-12">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 
         {/* Column 1 */}

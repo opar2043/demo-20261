@@ -36,7 +36,7 @@ const GamesSection = () => {
     },
   ];
   return (
-    <div className="w-full md:w-10/12 mx-auto px-4 md:px-8 py-6 bg-[#141515]">
+    <div className="w-full mx-auto px-4 md:px-8 py-6 bg-[#141515]">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-3">

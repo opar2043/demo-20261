@@ -33,7 +33,7 @@ const Banner = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="relative rounded-md w-full h-[60vh] md:h-[40vh] flex items-center justify-center text-center"
+            className="relative rounded-md w-full h-[20vh] md:h-[40vh] flex items-center justify-center text-center"
           >
             {/* Background Image */}
             <img
@@ -41,9 +41,6 @@ const Banner = () => {
               alt={`Slide ${index + 1}`}
               className="absolute inset-0 w-full h-full object-cover"
             />
-
-            {/* Gradient Overlay */}
-            {/* <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div> */}
           </div>
         ))}
       </Carousel>
