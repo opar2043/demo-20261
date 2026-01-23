@@ -9,27 +9,29 @@ import OfficialPartner from "../OfficialPartner/OfficialPartner";
 import FooterText from "./FooterText";
 import Sponsorship from "../Sponsorship/Sponsorship";
 import DempApp from "../Gaming/DempApp";
+import Provider from "../Gaming/Provider";
 
 const Home = () => {
   return (
     <div>
       <Banner></Banner>
       <div className="w-full md:w-10/12 mx-auto">
-      <DempApp></DempApp>
+        <DempApp></DempApp>
+        <Provider></Provider>
         <EventSection></EventSection>
         <GamesSection></GamesSection>
       </div>
 
-    <div className="bg-[#000000]">
-      <div className="w-full md:w-10/12 mx-auto">
-                      <Footer></Footer>
-        <Sponsorship></Sponsorship>
-        <BrandAmbassadors></BrandAmbassadors>
-        <OfficialPartner></OfficialPartner>
-        <About></About>
-        <FooterText></FooterText>
+      <div className="bg-[#000000]">
+        <div className="w-full md:w-10/12 mx-auto">
+          <Footer></Footer>
+          <Sponsorship></Sponsorship>
+          <BrandAmbassadors></BrandAmbassadors>
+          <OfficialPartner></OfficialPartner>
+          <About></About>
+          <FooterText></FooterText>
+        </div>
       </div>
-    </div>
     </div>
   );
 };
